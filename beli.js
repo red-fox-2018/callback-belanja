@@ -10,6 +10,7 @@ function beli(uang, obj, cb){
       cb(0)
     }
   }, obj.waktu);
+
 }
 
 module.exports = beli;
