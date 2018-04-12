@@ -1,5 +1,6 @@
 function beli(uang, obj, cb){
   console.log(`Saya pergi membeli ${obj.item}`)
+  // uang -= obj.harga
   setTimeout(function(){
     let kembalian = uang - obj.harga
     if (kembalian > 0) {
