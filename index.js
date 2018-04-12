@@ -16,12 +16,20 @@ let yogurt = new Belanjaan('yogurt', 6000, 500);
 let nasgor = new Belanjaan('nasi goreng', 10000, 800);
 
 
-beli(100000, permen, (kembalian) => {
-    beli(kembalian, bubur, (kembalian) => {
-        beli(kembalian, mie, (kembalian) => {
-            beli(kembalian, yogurt, (kembalian) => {
-                beli(kembalian, nasgor, (kembalian) => {});
-            });
+beli(11000, permen, (kembalian) => {
+    if (kembalian > 0) {
+        beli(kembalian, bubur, (kembalian) => {
+            if (kembalian > 0) {
+                beli(kembalian, mie, (kembalian) => {
+                    if (kembalian > 0) {
+                        beli(kembalian, yogurt, (kembalian) => {
+                            if (kembalian > 0) {
+                                beli(kembalian, nasgor, (kembalian) => {});
+                            }
+                        });
+                    }
+                });
+            }
         });
-    });
+    }
 });
