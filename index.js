@@ -13,7 +13,7 @@ let batu = new item('batu',500,300)
 let gula = new item('gula',200,150)
 let soda = new item('soda',700,200)
 let kacang = new item('kacang',600,200)
-var uang = 1000
+var uang = 2000
 
 beli(uang,permen,kembalianPermen=>{
   if(kembalianPermen > 0){

@@ -5,6 +5,7 @@ function beli(uang, obj, cb){
     // console.log(uang ,obj.harga)
     // console.log(uang > obj.harga)
 
+
     if (uang >= obj.harga) {
       let kembalian = uang - obj.harga
       console.log(`Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`);
